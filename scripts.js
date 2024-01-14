@@ -104,21 +104,26 @@ function ChangeCurrency() {
     }
     function FlagChange(){
         const currencyImg = document.querySelector(".bandeira")
+        const currencyName = document.getElementById("currency-name")
     
         if(currencyFlag.value == "dolar"){
             currencyImg.src ="./assets/Dolar.png"
+            currencyName.innerHTML = "Dolar"
         }
 
         if(currencyFlag.value == "libra"){
             currencyImg.src ="./assets/Libra.png"
+            currencyName.innerHTML = "Libra"
         }
         
         if(currencyFlag.value == "biticoin"){
             currencyImg.src ="./assets/Bitcoin.png"
+            currencyName.innerHTML = "Bitcoin"
         }
 
         if(currencyFlag.value == "euro"){
             currencyImg.src ="./assets/Euro.png"
+            currencyName.innerHTML = "Euro"
         }
    
      convertValues()
