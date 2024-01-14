@@ -104,26 +104,26 @@ function ChangeCurrency() {
     }
     function FlagChange(){
         const currencyImg = document.querySelector(".bandeira")
-        const currencyName = document.getElementById("currency-name")
+        const currencyBandeira = document.getElementById("currency-bandeira")
     
         if(currencyFlag.value == "dolar"){
             currencyImg.src ="./assets/Dolar.png"
-            currencyName.innerHTML = "Dolar"
+            currencyBandeira.innerHTML = "Dolar"
         }
 
         if(currencyFlag.value == "libra"){
             currencyImg.src ="./assets/Libra.png"
-            currencyName.innerHTML = "Libra"
+            currencyBandeira.innerHTML = "Libra"
         }
         
-        if(currencyFlag.value == "biticoin"){
+        if(currencyFlag.value == "bitcoin"){
             currencyImg.src ="./assets/Bitcoin.png"
-            currencyName.innerHTML = "Bitcoin"
+            currencyBandeira.innerHTML = "Bitcoin"
         }
 
         if(currencyFlag.value == "euro"){
             currencyImg.src ="./assets/Euro.png"
-            currencyName.innerHTML = "Euro"
+            currencyBandeira.innerHTML = "Euro"
         }
    
      convertValues()
